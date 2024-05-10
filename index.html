@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel, Tijeras</title>
+</head>
+<style>
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+<body>
+    <div class="button-container">
+        <button name="boton" onclick="elegirJugada('piedra')">Piedra</button>
+        <button name="boton" onclick="elegirJugada('papel')">Papel</button>
+        <button name="boton" onclick="elegirJugada('tijera')">Tijeras</button>
+    </div>
+    <div class="button-container">
+        <button id="reset-btn" onclick="resetJuego()">Reset Juego</button>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
